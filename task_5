@@ -1,0 +1,25 @@
+mas = [57.8, 46.51, 97, 75.32, 65, 865.12, 45.4, 548, 90.9, 1]
+print(id(mas))
+mas.sort()
+print(id(mas))
+for el in mas:
+    if len(str(el).split(".")) == 2:
+        if len(str(el).split(".")[1]) == 2:
+            print(f'{str(el).split(".")[0]} руб {str(el).split(".")[1]} коп', end=',')
+        else:
+            print(f'{str(el).split(".")[0]} руб {str(el).split(".")[1]}0 коп', end=',')
+    else:
+        print(f'{str(el).split(".")[0]} руб 00 коп', end=',')
+        
+print()       
+mas.sort(reverse = True)
+print(id(mas))
+for el in mas:
+    if len(str(el).split(".")) == 2:
+        if len(str(el).split(".")[1]) == 2:
+            print(f'{str(el).split(".")[0]} руб {str(el).split(".")[1]} коп', end=',')
+        else:
+            print(f'{str(el).split(".")[0]} руб {str(el).split(".")[1]}0 коп', end=',')
+    else:
+        print(f'{str(el).split(".")[0]} руб 00 коп', end=',')    
+    
