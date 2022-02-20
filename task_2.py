@@ -25,4 +25,4 @@ def currency_rates(val):
     return price
 
 
-print(currency_rates(input()))
+print(currency_rates(input("Введите код валюты: ")))
