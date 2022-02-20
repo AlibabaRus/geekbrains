@@ -25,4 +25,4 @@ def currency_rates(val):
     print(price,content.split('Date="')[1].split('"')[0])
 
 
-currency_rates(input())
+currency_rates(input("Введите код валюты: "))
