@@ -7,10 +7,10 @@ klasses = [
 ]
 if len(tutors) > len(klasses):
     for _ in range(len(tutors) - len(klasses)):
-        klasses.append('None')
+        klasses.append(None)
 else:
     for _ in range(len(klasses) - len(tutors)):
-        tutors.append('None')
+        tutors.append(None)
 
 
 def pars_gen():
