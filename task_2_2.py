@@ -6,12 +6,7 @@ from abc import ABC, abstractmethod
 class AbstractClass(ABC):
     @abstractmethod
     def get_quantity(self):
-        self._v = self._v / 6.5 + 0.5
-
-    @property
-    def get_v(self):
-        return self._v
-
+        pass
 
 class Coat(AbstractClass):
     def __init__(self, v):
